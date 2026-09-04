@@ -1,55 +1,59 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Longevity Day 4 — Metabolic Health</title>
+<meta content="#0d2726" name="theme-color"/>
 <style>
+/* bigcat-dark v1 */
+:root{color-scheme:dark}
+
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;background:#f0f7f4;color:#1f3a3d;line-height:1.75}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;background:#0d2726;color:#b4cfd2;line-height:1.75}
 .container{max-width:820px;margin:0 auto;padding:24px 20px 60px}
-header{text-align:center;padding:48px 0 28px;border-bottom:2px solid #d4e8e0;margin-bottom:36px}
-header .day{display:inline-block;background:#0d6e6e;color:#fff;font-size:0.78rem;font-weight:700;padding:4px 12px;border-radius:12px;letter-spacing:2px;margin-bottom:14px}
-header h1{font-size:1.85rem;font-weight:800;color:#0d6e6e;letter-spacing:1px;line-height:1.4}
-header .meta{margin-top:10px;font-size:0.92rem;color:#5a7d7d}
-header .evidence-note{margin-top:14px;display:inline-block;font-size:0.82rem;color:#3aa17e;background:#e6f3ed;padding:6px 14px;border-radius:8px;border-left:3px solid #3aa17e}
-.card{background:#fff;border-radius:14px;padding:28px 26px;margin-bottom:24px;box-shadow:0 2px 14px rgba(13,110,110,0.08);border-top:4px solid #3aa17e}
-.card .name{font-size:1.25rem;font-weight:700;color:#0d6e6e;margin-bottom:4px}
-.card .name-zh{font-size:0.88rem;color:#5a7d7d;font-style:italic;margin-bottom:10px}
-.card .tag{display:inline-block;font-size:0.72rem;background:#e6f3ed;color:#0d6e6e;padding:3px 10px;border-radius:6px;font-weight:600;margin-bottom:16px;letter-spacing:0.5px}
+header{text-align:center;padding:48px 0 28px;border-bottom:2px solid #273b33;margin-bottom:36px}
+header .day{display:inline-block;background:#0d6e6e;color:#ffffff;font-size:0.78rem;font-weight:700;padding:4px 12px;border-radius:12px;letter-spacing:2px;margin-bottom:14px}
+header h1{font-size:1.85rem;font-weight:800;color:#87e8e8;letter-spacing:1px;line-height:1.4}
+header .meta{margin-top:10px;font-size:0.92rem;color:#82a5a5}
+header .evidence-note{margin-top:14px;display:inline-block;font-size:0.82rem;color:#5fc6a3;background:#152f2e;padding:6px 14px;border-radius:8px;border-left:3px solid #5fc6a3}
+.card{background:#050f0f;border-radius:14px;padding:28px 26px;margin-bottom:24px;box-shadow:0 2px 14px rgba(0,0,0,0.08);border-top:4px solid #5fc6a3}
+.card .name{font-size:1.25rem;font-weight:700;color:#87e8e8;margin-bottom:4px}
+.card .name-zh{font-size:0.88rem;color:#82a5a5;font-style:italic;margin-bottom:10px}
+.card .tag{display:inline-block;font-size:0.72rem;background:#152f2e;color:#87e8e8;padding:3px 10px;border-radius:6px;font-weight:600;margin-bottom:16px;letter-spacing:0.5px}
 .section{margin-top:14px}
-.section .label{font-size:0.8rem;font-weight:700;color:#0d6e6e;letter-spacing:1px;margin-bottom:6px;display:flex;align-items:center;gap:6px}
-.section .label::before{content:"";display:inline-block;width:3px;height:14px;background:#3aa17e;border-radius:2px}
-.section .content{font-size:0.94rem;color:#2d4d4d;padding-left:9px}
-.conclusion{background:#fff8e6;border-left:4px solid #d4a017;padding:12px 14px;border-radius:6px;font-weight:600;color:#7a5c00}
-.evidence{background:#e8f0fa;border-left:4px solid #4a7ab8;padding:10px 14px;border-radius:6px;font-size:0.88rem;color:#2d4970}
-.protocol{background:#e6f3ed;padding:12px 14px;border-radius:6px;border-left:4px solid #3aa17e}
-.female{background:#fae6ee;padding:10px 14px;border-radius:6px;border-left:4px solid #c2438a;font-size:0.92rem}
-.myth{background:#fae8e6;padding:10px 14px;border-radius:6px;border-left:4px solid #c25543;font-size:0.92rem}
-.ref{font-size:0.85rem;color:#5a7d7d;font-style:italic}
-.tryit{background:#0d6e6e;color:#fff;padding:14px 16px;border-radius:8px;font-size:0.94rem;font-weight:500}
+.section .label{font-size:0.8rem;font-weight:700;color:#87e8e8;letter-spacing:1px;margin-bottom:6px;display:flex;align-items:center;gap:6px}
+.section .label::before{content:"";display:inline-block;width:3px;height:14px;background:#2d9471;border-radius:2px;color:#072222}
+.section .content{font-size:0.94rem;color:#a8c8c8;padding-left:9px}
+.conclusion{background:#28210f;border-left:4px solid #eab62d;padding:12px 14px;border-radius:6px;font-weight:600;color:#f5d77b}
+.evidence{background:#102a29;border-left:4px solid #4c7cba;padding:10px 14px;border-radius:6px;font-size:0.88rem;color:#89a5cc}
+.protocol{background:#152f2e;padding:12px 14px;border-radius:6px;border-left:4px solid #5fc6a3}
+.female{background:#112b2a;padding:10px 14px;border-radius:6px;border-left:4px solid #c14289;font-size:0.92rem}
+.myth{background:#112b2a;padding:10px 14px;border-radius:6px;border-left:4px solid #c15442;font-size:0.92rem}
+.ref{font-size:0.85rem;color:#82a5a5;font-style:italic}
+.tryit{background:#0d6e6e;color:#ffffff;padding:14px 16px;border-radius:8px;font-size:0.94rem;font-weight:500}
 .tryit .label{color:#a8e0d0;font-size:0.78rem;letter-spacing:2px;margin-bottom:4px;font-weight:700}
 table{width:100%;border-collapse:collapse;margin-top:8px;font-size:0.88rem}
-table th{background:#0d6e6e;color:#fff;padding:8px;text-align:left;font-weight:600}
-table td{padding:8px;border-bottom:1px solid #e0eae5}
-table tr:nth-child(even) td{background:#f5faf8}
-.viz{background:#f5faf8;border-radius:10px;padding:14px;margin-top:10px;overflow-x:auto}
-.viz-caption{font-size:0.78rem;color:#5a7d7d;text-align:center;margin-top:8px;font-style:italic}
-.footer-section{background:#fff;border-radius:14px;padding:26px 24px;margin-bottom:20px;box-shadow:0 2px 14px rgba(13,110,110,0.08);border-left:4px solid #0d6e6e}
-.footer-section h2{font-size:1.1rem;color:#0d6e6e;margin-bottom:14px;letter-spacing:1px}
+table th{background:#0d6e6e;color:#ffffff;padding:8px;text-align:left;font-weight:600}
+table td{padding:8px;border-bottom:1px solid #252f2a}
+table tr:nth-child(even) td{background:#0b201f}
+.viz{background:#0b201f;border-radius:10px;padding:14px;margin-top:10px;overflow-x:auto}
+.viz-caption{font-size:0.78rem;color:#82a5a5;text-align:center;margin-top:8px;font-style:italic}
+.footer-section{background:#050f0f;border-radius:14px;padding:26px 24px;margin-bottom:20px;box-shadow:0 2px 14px rgba(0,0,0,0.08);border-left:4px solid #87e8e8}
+.footer-section h2{font-size:1.1rem;color:#87e8e8;margin-bottom:14px;letter-spacing:1px}
 .footer-section ul{list-style:none;padding-left:0}
-.footer-section li{padding:7px 0;font-size:0.9rem;border-bottom:1px dashed #e0eae5;color:#2d4d4d}
+.footer-section li{padding:7px 0;font-size:0.9rem;border-bottom:1px dashed #252f2a;color:#a8c8c8}
 .footer-section li:last-child{border-bottom:none}
-details{background:#f5faf8;border-radius:8px;padding:12px 14px;margin-bottom:10px;border-left:3px solid #3aa17e}
-details summary{cursor:pointer;font-weight:600;color:#0d6e6e;font-size:0.95rem;outline:none}
+details{background:#0b201f;border-radius:8px;padding:12px 14px;margin-bottom:10px;border-left:3px solid #5fc6a3}
+details summary{cursor:pointer;font-weight:600;color:#87e8e8;font-size:0.95rem;outline:none}
 details[open] summary{margin-bottom:10px}
-details div{font-size:0.9rem;color:#2d4d4d;padding-left:6px;line-height:1.7}
-.nav{text-align:center;margin-top:40px;padding-top:24px;border-top:1px solid #d4e8e0}
-.nav a{color:#0d6e6e;text-decoration:none;font-weight:600;padding:10px 24px;background:#fff;border-radius:8px;border:1px solid #d4e8e0;display:inline-block;transition:all 0.2s}
-.nav a:hover{background:#0d6e6e;color:#fff}
+details div{font-size:0.9rem;color:#a8c8c8;padding-left:6px;line-height:1.7}
+.nav{text-align:center;margin-top:40px;padding-top:24px;border-top:1px solid #273b33}
+.nav a{color:#87e8e8;text-decoration:none;font-weight:600;padding:10px 24px;background:#050f0f;border-radius:8px;border:1px solid #273b33;display:inline-block;transition:all 0.2s}
+.nav a:hover{background:#0d6e6e;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
 </style></head><body><div class="container">
 
 <header>
 <div class="day">DAY 4</div>
-<h1>Longevity: Metabolic Health<br><span style="font-size:1rem;color:#5a7d7d;font-weight:500">Glucose, Insulin, ApoB, Visceral Fat</span></h1>
+<h1>Longevity: Metabolic Health<br><span style="font-size:1rem;color:#82a5a5;font-weight:500">Glucose, Insulin, ApoB, Visceral Fat</span></h1>
 <div class="meta">2026-05-25 · BigCat's Vitality Protocol</div>
 <div class="evidence-note">Evidence base for this issue: Mendelian randomization + large prospective cohorts + intervention RCTs; thresholds drawn from ADA / EAS / Attia "Medicine 3.0" consensus</div>
 </header>
@@ -105,7 +109,7 @@ details div{font-size:0.9rem;color:#2d4d4d;padding-left:6px;line-height:1.7}
 <div class="content">
 <div class="viz">
 <svg viewBox="0 0 720 240" width="100%" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" style="font-family:-apple-system,'Noto Sans SC',sans-serif">
-<defs><style>.axis{stroke:#5a7d7d;stroke-width:1}.tick{font-size:10px;fill:#5a7d7d}.lbl{font-size:11px;fill:#0d6e6e;font-weight:600}.ins{stroke:#c2438a;stroke-width:2.4;fill:none}.glu{stroke:#0d6e6e;stroke-width:2.4;fill:none;stroke-dasharray:6 3}.bcell{stroke:#d4a017;stroke-width:2;fill:none;stroke-dasharray:2 3}.zone{font-size:10px;fill:#5a7d7d}</style></defs>
+<defs><style>.axis{stroke:#82a5a5;stroke-width:1}.tick{font-size:10px;fill:#82a5a5}.lbl{font-size:11px;fill:#87e8e8;font-weight:600}.ins{stroke:#c14289;stroke-width:2.4;fill:none}.glu{stroke:#87e8e8;stroke-width:2.4;fill:none;stroke-dasharray:6 3}.bcell{stroke:#eab62d;stroke-width:2;fill:none;stroke-dasharray:2 3}.zone{font-size:10px;fill:#82a5a5}</style></defs>
 <line x1="60" y1="30" x2="60" y2="200" class="axis"/>
 <line x1="60" y1="200" x2="700" y2="200" class="axis"/>
 <text x="6" y="30" class="lbl">level</text>
@@ -115,14 +119,14 @@ details div{font-size:0.9rem;color:#2d4d4d;padding-left:6px;line-height:1.7}
 <line x1="380" y1="200" x2="380" y2="206" class="axis"/><text x="365" y="220" class="tick">−10</text>
 <line x1="540" y1="200" x2="540" y2="206" class="axis"/><text x="525" y="220" class="tick">−5</text>
 <line x1="700" y1="200" x2="700" y2="206" class="axis"/><text x="670" y="220" class="tick">0 Dx</text>
-<line x1="700" y1="35" x2="700" y2="200" stroke="#c25543" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="700" y1="35" x2="700" y2="200" stroke="#c15442" stroke-width="1" stroke-dasharray="3 3"/>
 <text x="615" y="48" style="font-size:10px;fill:#c25543;font-weight:600">T2D diagnosis</text>
 <path d="M60,170 L150,165 L240,150 L330,125 L420,95 L510,70 L600,55 L660,75 L700,110" class="ins"/>
 <path d="M60,175 L150,173 L240,172 L330,170 L420,168 L510,165 L600,150 L660,110 L700,70" class="glu"/>
 <path d="M60,180 L150,178 L240,175 L330,170 L420,160 L510,145 L600,125 L660,115 L700,110" class="bcell"/>
-<rect x="445" y="35" width="14" height="10" fill="#c2438a"/><text x="465" y="44" class="zone">fasting insulin</text>
+<rect x="445" y="35" width="14" height="10" fill="#a02168"/><text x="465" y="44" class="zone">fasting insulin</text>
 <rect x="445" y="55" width="14" height="3" fill="#0d6e6e"/><text x="465" y="60" class="zone">fasting glucose (dashed)</text>
-<rect x="445" y="68" width="14" height="3" fill="#d4a017"/><text x="465" y="74" class="zone">residual β-cell function</text>
+<rect x="445" y="68" width="14" height="3" fill="#bf8b02"/><text x="465" y="74" class="zone">residual β-cell function</text>
 <text x="200" y="80" class="zone" style="fill:#c2438a">hyperinsulinemic compensation — glucose normal, insulin already high</text>
 </svg>
 <div class="viz-caption">The silent 15 years before diabetes: insulin rises first, β-cells quietly decline, glucose moves last. Watching glucose alone = missing the entire early window.</div>
@@ -167,14 +171,14 @@ details div{font-size:0.9rem;color:#2d4d4d;padding-left:6px;line-height:1.7}
 <div class="content">
 <div class="viz">
 <svg viewBox="0 0 720 200" width="100%" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" style="font-family:-apple-system,'Noto Sans SC',sans-serif">
-<defs><style>.lbl{font-size:11px;fill:#0d6e6e;font-weight:700}.cap{font-size:10px;fill:#5a7d7d}</style></defs>
+<defs><style>.lbl{font-size:11px;fill:#87e8e8;font-weight:700}.cap{font-size:10px;fill:#82a5a5}</style></defs>
 <text x="40" y="22" class="lbl">A. Same LDL-C, few large particles → ApoB low → low risk</text>
-<g><circle cx="100" cy="80" r="22" fill="#3aa17e" opacity="0.4" stroke="#0d6e6e"/><circle cx="170" cy="80" r="22" fill="#3aa17e" opacity="0.4" stroke="#0d6e6e"/><circle cx="240" cy="80" r="22" fill="#3aa17e" opacity="0.4" stroke="#0d6e6e"/></g>
+<g><circle cx="100" cy="80" r="22" fill="#2d9471" opacity="0.4" stroke="#87e8e8"/><circle cx="170" cy="80" r="22" fill="#2d9471" opacity="0.4" stroke="#87e8e8"/><circle cx="240" cy="80" r="22" fill="#2d9471" opacity="0.4" stroke="#87e8e8"/></g>
 <text x="70" y="130" class="cap">3 particles · large · cholesterol-rich</text>
 <text x="70" y="146" class="cap">LDL-C ≈ 120 · ApoB ≈ 70</text>
-<line x1="370" y1="40" x2="370" y2="180" stroke="#d4e8e0" stroke-width="2"/>
+<line x1="370" y1="40" x2="370" y2="180" stroke="#273b33" stroke-width="2"/>
 <text x="390" y="22" class="lbl">B. Same LDL-C, many small-dense particles → ApoB high → high risk</text>
-<g><circle cx="430" cy="70" r="11" fill="#c2438a" opacity="0.5" stroke="#c2438a"/><circle cx="460" cy="70" r="11" fill="#c2438a" opacity="0.5" stroke="#c2438a"/><circle cx="490" cy="70" r="11" fill="#c2438a" opacity="0.5" stroke="#c2438a"/><circle cx="520" cy="70" r="11" fill="#c2438a" opacity="0.5" stroke="#c2438a"/><circle cx="550" cy="70" r="11" fill="#c2438a" opacity="0.5" stroke="#c2438a"/><circle cx="580" cy="70" r="11" fill="#c2438a" opacity="0.5" stroke="#c2438a"/><circle cx="610" cy="70" r="11" fill="#c2438a" opacity="0.5" stroke="#c2438a"/><circle cx="640" cy="70" r="11" fill="#c2438a" opacity="0.5" stroke="#c2438a"/><circle cx="445" cy="100" r="11" fill="#c2438a" opacity="0.5" stroke="#c2438a"/><circle cx="475" cy="100" r="11" fill="#c2438a" opacity="0.5" stroke="#c2438a"/><circle cx="505" cy="100" r="11" fill="#c2438a" opacity="0.5" stroke="#c2438a"/><circle cx="535" cy="100" r="11" fill="#c2438a" opacity="0.5" stroke="#c2438a"/><circle cx="565" cy="100" r="11" fill="#c2438a" opacity="0.5" stroke="#c2438a"/><circle cx="595" cy="100" r="11" fill="#c2438a" opacity="0.5" stroke="#c2438a"/><circle cx="625" cy="100" r="11" fill="#c2438a" opacity="0.5" stroke="#c2438a"/></g>
+<g><circle cx="430" cy="70" r="11" fill="#c14289" opacity="0.5" stroke="#c14289"/><circle cx="460" cy="70" r="11" fill="#c14289" opacity="0.5" stroke="#c14289"/><circle cx="490" cy="70" r="11" fill="#c14289" opacity="0.5" stroke="#c14289"/><circle cx="520" cy="70" r="11" fill="#c14289" opacity="0.5" stroke="#c14289"/><circle cx="550" cy="70" r="11" fill="#c14289" opacity="0.5" stroke="#c14289"/><circle cx="580" cy="70" r="11" fill="#c14289" opacity="0.5" stroke="#c14289"/><circle cx="610" cy="70" r="11" fill="#c14289" opacity="0.5" stroke="#c14289"/><circle cx="640" cy="70" r="11" fill="#c14289" opacity="0.5" stroke="#c14289"/><circle cx="445" cy="100" r="11" fill="#c14289" opacity="0.5" stroke="#c14289"/><circle cx="475" cy="100" r="11" fill="#c14289" opacity="0.5" stroke="#c14289"/><circle cx="505" cy="100" r="11" fill="#c14289" opacity="0.5" stroke="#c14289"/><circle cx="535" cy="100" r="11" fill="#c14289" opacity="0.5" stroke="#c14289"/><circle cx="565" cy="100" r="11" fill="#c14289" opacity="0.5" stroke="#c14289"/><circle cx="595" cy="100" r="11" fill="#c14289" opacity="0.5" stroke="#c14289"/><circle cx="625" cy="100" r="11" fill="#c14289" opacity="0.5" stroke="#c14289"/></g>
 <text x="400" y="135" class="cap">15 particles · small-dense · same total cholesterol</text>
 <text x="400" y="151" class="cap">LDL-C ≈ 120 · ApoB ≈ 130</text>
 <text x="400" y="172" class="cap" style="fill:#c25543">→ Particle count doubled, arterial-wall penetration risk ↑↑</text>

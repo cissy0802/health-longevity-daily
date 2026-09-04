@@ -2,54 +2,58 @@
 
 <html lang="zh-CN"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>健康长寿 Day 5 — 心血管长寿</title>
+<meta content="#0d2726" name="theme-color"/>
 <style>
+/* bigcat-dark v1 */
+:root{color-scheme:dark}
+
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;background:#f0f7f4;color:#1f3a3d;line-height:1.75}
+body{font-family:-apple-system,"SF Pro Display","Noto Sans SC",sans-serif;background:#0d2726;color:#b4cfd2;line-height:1.75}
 .container{max-width:820px;margin:0 auto;padding:24px 20px 60px}
-header{text-align:center;padding:48px 0 28px;border-bottom:2px solid #d4e8e0;margin-bottom:36px}
-header .day{display:inline-block;background:#0d6e6e;color:#fff;font-size:0.78rem;font-weight:700;padding:4px 12px;border-radius:12px;letter-spacing:2px;margin-bottom:14px}
-header h1{font-size:1.85rem;font-weight:800;color:#0d6e6e;letter-spacing:1px;line-height:1.4}
-header .meta{margin-top:10px;font-size:0.92rem;color:#5a7d7d}
-header .evidence-note{margin-top:14px;display:inline-block;font-size:0.82rem;color:#3aa17e;background:#e6f3ed;padding:6px 14px;border-radius:8px;border-left:3px solid #3aa17e}
-.card{background:#fff;border-radius:14px;padding:28px 26px;margin-bottom:24px;box-shadow:0 2px 14px rgba(13,110,110,0.08);border-top:4px solid #3aa17e}
-.card .name{font-size:1.25rem;font-weight:700;color:#0d6e6e;margin-bottom:4px}
-.card .name-en{font-size:0.88rem;color:#5a7d7d;font-style:italic;margin-bottom:10px}
-.card .tag{display:inline-block;font-size:0.72rem;background:#e6f3ed;color:#0d6e6e;padding:3px 10px;border-radius:6px;font-weight:600;margin-bottom:16px;letter-spacing:0.5px}
+header{text-align:center;padding:48px 0 28px;border-bottom:2px solid #273b33;margin-bottom:36px}
+header .day{display:inline-block;background:#0d6e6e;color:#ffffff;font-size:0.78rem;font-weight:700;padding:4px 12px;border-radius:12px;letter-spacing:2px;margin-bottom:14px}
+header h1{font-size:1.85rem;font-weight:800;color:#87e8e8;letter-spacing:1px;line-height:1.4}
+header .meta{margin-top:10px;font-size:0.92rem;color:#82a5a5}
+header .evidence-note{margin-top:14px;display:inline-block;font-size:0.82rem;color:#5fc6a3;background:#152f2e;padding:6px 14px;border-radius:8px;border-left:3px solid #5fc6a3}
+.card{background:#050f0f;border-radius:14px;padding:28px 26px;margin-bottom:24px;box-shadow:0 2px 14px rgba(0,0,0,0.08);border-top:4px solid #5fc6a3}
+.card .name{font-size:1.25rem;font-weight:700;color:#87e8e8;margin-bottom:4px}
+.card .name-en{font-size:0.88rem;color:#82a5a5;font-style:italic;margin-bottom:10px}
+.card .tag{display:inline-block;font-size:0.72rem;background:#152f2e;color:#87e8e8;padding:3px 10px;border-radius:6px;font-weight:600;margin-bottom:16px;letter-spacing:0.5px}
 .section{margin-top:14px}
-.section .label{font-size:0.8rem;font-weight:700;color:#0d6e6e;letter-spacing:1px;margin-bottom:6px;display:flex;align-items:center;gap:6px}
-.section .label::before{content:"";display:inline-block;width:3px;height:14px;background:#3aa17e;border-radius:2px}
-.section .content{font-size:0.94rem;color:#2d4d4d;padding-left:9px}
-.conclusion{background:#fff8e6;border-left:4px solid #d4a017;padding:12px 14px;border-radius:6px;font-weight:600;color:#7a5c00}
-.evidence{background:#e8f0fa;border-left:4px solid #4a7ab8;padding:10px 14px;border-radius:6px;font-size:0.88rem;color:#2d4970}
-.protocol{background:#e6f3ed;padding:12px 14px;border-radius:6px;border-left:4px solid #3aa17e}
-.female{background:#fae6ee;padding:10px 14px;border-radius:6px;border-left:4px solid #c2438a;font-size:0.92rem}
-.myth{background:#fae8e6;padding:10px 14px;border-radius:6px;border-left:4px solid #c25543;font-size:0.92rem}
-.ref{font-size:0.85rem;color:#5a7d7d;font-style:italic}
-.tryit{background:#0d6e6e;color:#fff;padding:14px 16px;border-radius:8px;font-size:0.94rem;font-weight:500}
+.section .label{font-size:0.8rem;font-weight:700;color:#87e8e8;letter-spacing:1px;margin-bottom:6px;display:flex;align-items:center;gap:6px}
+.section .label::before{content:"";display:inline-block;width:3px;height:14px;background:#2d9471;border-radius:2px;color:#072222}
+.section .content{font-size:0.94rem;color:#a8c8c8;padding-left:9px}
+.conclusion{background:#28210f;border-left:4px solid #eab62d;padding:12px 14px;border-radius:6px;font-weight:600;color:#f5d77b}
+.evidence{background:#102a29;border-left:4px solid #4c7cba;padding:10px 14px;border-radius:6px;font-size:0.88rem;color:#89a5cc}
+.protocol{background:#152f2e;padding:12px 14px;border-radius:6px;border-left:4px solid #5fc6a3}
+.female{background:#112b2a;padding:10px 14px;border-radius:6px;border-left:4px solid #c14289;font-size:0.92rem}
+.myth{background:#112b2a;padding:10px 14px;border-radius:6px;border-left:4px solid #c15442;font-size:0.92rem}
+.ref{font-size:0.85rem;color:#82a5a5;font-style:italic}
+.tryit{background:#0d6e6e;color:#ffffff;padding:14px 16px;border-radius:8px;font-size:0.94rem;font-weight:500}
 .tryit .label{color:#a8e0d0;font-size:0.78rem;letter-spacing:2px;margin-bottom:4px;font-weight:700}
 table{width:100%;border-collapse:collapse;margin-top:8px;font-size:0.88rem}
-table th{background:#0d6e6e;color:#fff;padding:8px;text-align:left;font-weight:600}
-table td{padding:8px;border-bottom:1px solid #e0eae5}
-table tr:nth-child(even) td{background:#f5faf8}
-.viz{background:#f5faf8;border-radius:10px;padding:14px;margin-top:10px;overflow-x:auto}
-.viz-caption{font-size:0.78rem;color:#5a7d7d;text-align:center;margin-top:8px;font-style:italic}
-.footer-section{background:#fff;border-radius:14px;padding:26px 24px;margin-bottom:20px;box-shadow:0 2px 14px rgba(13,110,110,0.08);border-left:4px solid #0d6e6e}
-.footer-section h2{font-size:1.1rem;color:#0d6e6e;margin-bottom:14px;letter-spacing:1px}
+table th{background:#0d6e6e;color:#ffffff;padding:8px;text-align:left;font-weight:600}
+table td{padding:8px;border-bottom:1px solid #252f2a}
+table tr:nth-child(even) td{background:#0b201f}
+.viz{background:#0b201f;border-radius:10px;padding:14px;margin-top:10px;overflow-x:auto}
+.viz-caption{font-size:0.78rem;color:#82a5a5;text-align:center;margin-top:8px;font-style:italic}
+.footer-section{background:#050f0f;border-radius:14px;padding:26px 24px;margin-bottom:20px;box-shadow:0 2px 14px rgba(0,0,0,0.08);border-left:4px solid #87e8e8}
+.footer-section h2{font-size:1.1rem;color:#87e8e8;margin-bottom:14px;letter-spacing:1px}
 .footer-section ul{list-style:none;padding-left:0}
-.footer-section li{padding:7px 0;font-size:0.9rem;border-bottom:1px dashed #e0eae5;color:#2d4d4d}
+.footer-section li{padding:7px 0;font-size:0.9rem;border-bottom:1px dashed #252f2a;color:#a8c8c8}
 .footer-section li:last-child{border-bottom:none}
-details{background:#f5faf8;border-radius:8px;padding:12px 14px;margin-bottom:10px;border-left:3px solid #3aa17e}
-details summary{cursor:pointer;font-weight:600;color:#0d6e6e;font-size:0.95rem;outline:none}
+details{background:#0b201f;border-radius:8px;padding:12px 14px;margin-bottom:10px;border-left:3px solid #5fc6a3}
+details summary{cursor:pointer;font-weight:600;color:#87e8e8;font-size:0.95rem;outline:none}
 details[open] summary{margin-bottom:10px}
-details div{font-size:0.9rem;color:#2d4d4d;padding-left:6px;line-height:1.7}
-.nav{text-align:center;margin-top:40px;padding-top:24px;border-top:1px solid #d4e8e0}
-.nav a{color:#0d6e6e;text-decoration:none;font-weight:600;padding:10px 24px;background:#fff;border-radius:8px;border:1px solid #d4e8e0;display:inline-block;transition:all 0.2s}
-.nav a:hover{background:#0d6e6e;color:#fff}
+details div{font-size:0.9rem;color:#a8c8c8;padding-left:6px;line-height:1.7}
+.nav{text-align:center;margin-top:40px;padding-top:24px;border-top:1px solid #273b33}
+.nav a{color:#87e8e8;text-decoration:none;font-weight:600;padding:10px 24px;background:#050f0f;border-radius:8px;border:1px solid #273b33;display:inline-block;transition:all 0.2s}
+.nav a:hover{background:#0d6e6e;color:#ffffff}
 @media(max-width:600px){header h1{font-size:1.4rem}.card{padding:20px 18px}.card .name{font-size:1.08rem}}
 </style></head><body><div class="container">
 <header>
 <div class="day">DAY 5</div>
-<h1 data-tts="b9b9fb1e7abadf1c">健康长寿：心血管长寿<br/><span style="font-size:1rem;color:#5a7d7d;font-weight:500">Cardiovascular Longevity — CAC, Lp(a), BP Targets, HRV</span></h1>
+<h1 data-tts="b9b9fb1e7abadf1c">健康长寿：心血管长寿<br/><span style="font-size:1rem;color:#82a5a5;font-weight:500">Cardiovascular Longevity — CAC, Lp(a), BP Targets, HRV</span></h1>
 <div class="meta">2026-05-26 · BigCat's Vitality Protocol</div>
 <div class="evidence-note">本期证据等级：以 RCT (SPRINT, JUPITER) + 孟德尔随机化 (Lp(a)) + 大型前瞻队列 (MESA, FHS) + Attia「Medicine 3.0」共识为主</div>
 </header>
@@ -67,27 +71,27 @@ details div{font-size:0.9rem;color:#2d4d4d;padding-left:6px;line-height:1.7}
 <div class="content">
 <div class="viz">
 <svg preserveaspectratio="xMidYMid meet" style="font-family:-apple-system,'Noto Sans SC',sans-serif" viewbox="0 0 720 220" width="100%" xmlns="http://www.w3.org/2000/svg">
-<defs><style>.lbl{font-size:11px;fill:#0d6e6e;font-weight:700}.cap{font-size:10px;fill:#5a7d7d}.num{font-size:13px;font-weight:800;fill:#fff}</style></defs>
+<defs><style>.lbl{font-size:11px;fill:#87e8e8;font-weight:700}.cap{font-size:10px;fill:#82a5a5}.num{font-size:13px;font-weight:800;fill:#ffffff}</style></defs>
 <text class="lbl" x="60" y="20">CAC 评分（Agatston）与 10 年 ASCVD 风险</text>
-<rect fill="#3aa17e" height="60" rx="6" width="110" x="60" y="50"></rect>
+<rect fill="#2d9471" height="60" rx="6" width="110" x="60" y="50"></rect>
 <text class="num" x="92" y="78">0</text>
 <text class="num" style="font-size:10px" x="80" y="100">极低风险</text>
 <text class="cap" x="60" y="130">10 年 &lt; 1%</text>
 <text class="cap" x="60" y="146">可暂缓他汀</text>
 <text class="cap" x="60" y="162">5 年后复查</text>
-<rect fill="#d4a017" height="60" rx="6" width="110" x="180" y="50"></rect>
+<rect fill="#bf8b02" height="60" rx="6" width="110" x="180" y="50"></rect>
 <text class="num" x="208" y="78">1–99</text>
 <text class="num" style="font-size:10px" x="195" y="100">轻度</text>
 <text class="cap" x="180" y="130">10 年 ~ 2–7%</text>
 <text class="cap" x="180" y="146">生活方式 +</text>
 <text class="cap" x="180" y="162">中等强度他汀</text>
-<rect fill="#e8783a" height="60" rx="6" width="110" x="300" y="50"></rect>
+<rect fill="#b8480a" height="60" rx="6" width="110" x="300" y="50"></rect>
 <text class="num" x="322" y="78">100–299</text>
 <text class="num" style="font-size:10px" x="320" y="100">中度</text>
 <text class="cap" x="300" y="130">10 年 ~ 7–15%</text>
 <text class="cap" x="300" y="146">他汀 + ApoB</text>
 <text class="cap" x="300" y="162">&lt; 60 mg/dL</text>
-<rect fill="#c25543" height="60" rx="6" width="110" x="420" y="50"></rect>
+<rect fill="#a03321" height="60" rx="6" width="110" x="420" y="50"></rect>
 <text class="num" x="445" y="78">300–999</text>
 <text class="num" style="font-size:10px" x="438" y="100">重度</text>
 <text class="cap" x="420" y="130">10 年 &gt; 15%</text>
@@ -167,28 +171,28 @@ details div{font-size:0.9rem;color:#2d4d4d;padding-left:6px;line-height:1.7}
 <div class="content">
 <div class="viz">
 <svg preserveaspectratio="xMidYMid meet" style="font-family:-apple-system,'Noto Sans SC',sans-serif" viewbox="0 0 720 230" width="100%" xmlns="http://www.w3.org/2000/svg">
-<defs><style>.axis{stroke:#5a7d7d;stroke-width:1}.lbl{font-size:11px;fill:#0d6e6e;font-weight:700}.cap{font-size:10px;fill:#5a7d7d}.bar{opacity:0.85}</style></defs>
+<defs><style>.axis{stroke:#82a5a5;stroke-width:1}.lbl{font-size:11px;fill:#87e8e8;font-weight:700}.cap{font-size:10px;fill:#82a5a5}.bar{opacity:0.85}</style></defs>
 <text class="lbl" x="280" y="20">收缩压阈值 (mmHg) — 不同测量场景</text>
 <line class="axis" x1="160" x2="160" y1="40" y2="180"></line>
 <line class="axis" x1="160" x2="700" y1="180" y2="180"></line>
 <text class="cap" x="80" y="70">诊室 (Office)</text>
 <text class="cap" x="80" y="115">家测均值 (Home)</text>
 <text class="cap" x="80" y="160">24h ABPM 均值</text>
-<rect class="bar" fill="#3aa17e" height="22" width="160" x="160" y="55"></rect>
-<text style="font-size:11px;fill:#fff;font-weight:700" x="265" y="71">≤ 120</text>
+<rect class="bar" fill="#2d9471" height="22" width="160" x="160" y="55"></rect>
+<text style="font-size:11px;fill:#ffffff;font-weight:700" x="265" y="71">≤ 120</text>
 <text class="cap" x="325" y="71">长寿最优</text>
-<rect fill="none" height="22" stroke="#d4a017" stroke-width="2" width="225" x="160" y="55"></rect>
-<text class="cap" style="fill:#d4a017" x="390" y="71">130 高血压阈值 (ACC/AHA)</text>
-<rect class="bar" fill="#3aa17e" height="22" width="140" x="160" y="100"></rect>
-<text style="font-size:11px;fill:#fff;font-weight:700" x="240" y="116">≤ 115</text>
+<rect fill="none" height="22" stroke="#eab62d" stroke-width="2" width="225" x="160" y="55"></rect>
+<text class="cap" style="fill:#eab62d" x="390" y="71">130 高血压阈值 (ACC/AHA)</text>
+<rect class="bar" fill="#2d9471" height="22" width="140" x="160" y="100"></rect>
+<text style="font-size:11px;fill:#ffffff;font-weight:700" x="240" y="116">≤ 115</text>
 <text class="cap" x="305" y="116">长寿最优</text>
-<rect fill="none" height="22" stroke="#d4a017" stroke-width="2" width="200" x="160" y="100"></rect>
-<text class="cap" style="fill:#d4a017" x="365" y="116">125 家测高血压阈值</text>
-<rect class="bar" fill="#3aa17e" height="22" width="135" x="160" y="145"></rect>
-<text style="font-size:11px;fill:#fff;font-weight:700" x="235" y="161">≤ 115/120</text>
+<rect fill="none" height="22" stroke="#eab62d" stroke-width="2" width="200" x="160" y="100"></rect>
+<text class="cap" style="fill:#eab62d" x="365" y="116">125 家测高血压阈值</text>
+<rect class="bar" fill="#2d9471" height="22" width="135" x="160" y="145"></rect>
+<text style="font-size:11px;fill:#ffffff;font-weight:700" x="235" y="161">≤ 115/120</text>
 <text class="cap" x="305" y="161">日间均值（去除夜间）</text>
-<rect fill="none" height="22" stroke="#d4a017" stroke-width="2" width="190" x="160" y="145"></rect>
-<text class="cap" style="fill:#d4a017" x="355" y="161">夜间 &lt;110；非杓型 = 风险</text>
+<rect fill="none" height="22" stroke="#eab62d" stroke-width="2" width="190" x="160" y="145"></rect>
+<text class="cap" style="fill:#eab62d" x="355" y="161">夜间 &lt;110；非杓型 = 风险</text>
 <text class="cap" style="font-style:italic" x="160" y="205">家测/ABPM 比诊室「低 5–10 mmHg」是正常的，因为去除了白大褂效应</text>
 </svg>
 <div class="viz-caption">「诊室 130」≠「真实 130」。多数人诊室高估 5–15 mmHg，少数人「隐匿高血压」反向欠估——只有家测/ABPM 能识别。</div>
@@ -233,10 +237,10 @@ details div{font-size:0.9rem;color:#2d4d4d;padding-left:6px;line-height:1.7}
 <div class="content">
 <div class="viz">
 <svg preserveaspectratio="xMidYMid meet" style="font-family:-apple-system,'Noto Sans SC',sans-serif" viewbox="0 0 720 230" width="100%" xmlns="http://www.w3.org/2000/svg">
-<defs><style>.lbl{font-size:11px;fill:#0d6e6e;font-weight:700}.cap{font-size:10px;fill:#5a7d7d}.up{fill:#3aa17e}.dn{fill:#c25543}</style></defs>
+<defs><style>.lbl{font-size:11px;fill:#87e8e8;font-weight:700}.cap{font-size:10px;fill:#82a5a5}.up{fill:#5fc6a3}.dn{fill:#c25543}</style></defs>
 <text class="lbl" x="60" y="20">提升 HRV ↑（副交感/复原）vs 降低 HRV ↓（交感/损耗）</text>
-<line stroke="#d4e8e0" stroke-width="2" x1="360" x2="360" y1="35" y2="210"></line>
-<text class="lbl" style="fill:#3aa17e" x="80" y="55">↑ 提升因素</text>
+<line stroke="#273b33" stroke-width="2" x1="360" x2="360" y1="35" y2="210"></line>
+<text class="lbl" style="fill:#5fc6a3" x="80" y="55">↑ 提升因素</text>
 <text class="cap" x="80" y="80">• Zone 2 有氧 (慢性)</text>
 <text class="cap" x="80" y="98">• 充足睡眠 7–9h</text>
 <text class="cap" x="80" y="116">• 慢呼吸 5–6 次/分</text>
